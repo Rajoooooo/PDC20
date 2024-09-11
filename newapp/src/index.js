@@ -5,10 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Registration from './Registration';
 import Register from './Mod01Registration';
+import Expressionjsx from './Expressionjsx'
+import GreetHello from './Greetings/GreetHello';
+import Homepage from './Conditionals/Homepage';
+import LoginForm from './dashboard/LoginForm';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Register />
+    <App/>
   </React.StrictMode>
 );
 
