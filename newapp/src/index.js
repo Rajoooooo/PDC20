@@ -9,11 +9,14 @@ import Expressionjsx from './Expressionjsx'
 import GreetHello from './Greetings/GreetHello';
 import Homepage from './Conditionals/Homepage';
 import LoginForm from './dashboard/LoginForm';
+import UserProfile from './Conditionals/profile/UserProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    {/* <App/> */}
+<UserProfile/>
+
   </React.StrictMode>
 );
 
