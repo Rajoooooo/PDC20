@@ -10,12 +10,18 @@ import GreetHello from './Greetings/GreetHello';
 import Homepage from './Conditionals/Homepage';
 import LoginForm from './dashboard/LoginForm';
 import UserProfile from './Conditionals/profile/UserProfile';
+import MainEvent from './Events/MainEvent';
+import Itemlist from './Events/Itemlist';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App/> */}
-<UserProfile/>
+{/* <UserProfile/> */}
+
+<Itemlist/>
+
+{/* <MainEvent/> */}
 
   </React.StrictMode>
 );

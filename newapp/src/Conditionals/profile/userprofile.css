@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(90deg, #feda77, #fa5c8c, #d62976, #962fbf, #4f5bd5);
     margin: 0;
@@ -6,16 +6,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
 .container {
-    max-width: 400px; /* Max width for the profile card */
+    max-width: 400px; 
     width: 100%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Rounded corners */
+    overflow: hidden; 
 }
 
 nav {
@@ -28,7 +28,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-around; /* Space out the items evenly */
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -38,12 +38,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-    color: #0095f6; /* Instagram blue */
+    color: #0095f6; 
 }
 
 h2 {
     color: #262626;
-    text-align: center; /* Center text */
+    text-align: center; 
 }
 
 .profile {
@@ -77,17 +77,99 @@ input[type="text"], input[type="email"] {
 
 button {
     width: 100%;
-    background-color: #ff3b30; /* Instagram pinkish-red */
+    background-color: #ff3b30; 
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 10px; /* Spacing above button */
+    margin-top: 10px; 
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e63946; /* Darker pink on hover */
+    background-color: #e63946; 
+} */
+
+.item-list-app {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #C81D25; /* Mang Inasal red */
+}
+
+.item-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button {
+    background-color: #FFD700; /* Mang Inasal yellow */
+}
+
+.submit-button:hover {
+    background-color: #FFC300; /* Lighter yellow on hover */
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light background for items */
+}
+
+.item-text {
+    flex-grow: 1; /* Allow text to take available space */
+    color: #333;
+}
+
+.item-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-button {
+    background-color: #28a745; /* Green for Edit */
+}
+
+.edit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
 }
