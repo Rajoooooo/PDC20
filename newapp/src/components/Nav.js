@@ -22,6 +22,7 @@ const Nav = () => {
                     <NavLink to="/" className="nav-link" activeClassName="active" aria-current="page">Home</NavLink>
                     <NavLink to="/profile" className="nav-link" activeClassName="active" aria-current="page">Profile</NavLink>
                     <NavLink to="/contact" className="nav-link" activeClassName="active" aria-current="page">Contact</NavLink>
+                    <NavLink to="/mymainforms" className="nav-link" activeClassName="active" aria-current="page">Basic Form</NavLink>
                 </div>
             </div>
         </nav>

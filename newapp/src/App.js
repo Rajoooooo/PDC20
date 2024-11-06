@@ -8,6 +8,7 @@ import ContactUs from './components/ContactUs';
 import MyHome from './components/MyHome';
 import MyProfile from './components/MyProfile';
 import Nav from './components/Nav';
+import MyMainForm from './MyMainForms/MyMainForm';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<MyHome/>}/>
           <Route path="/profile" element={<MyProfile/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
+          <Route path="/mymainforms/*" element={<MyMainForm/>}/>
           <Route path="*" element={<h2>404 not found</h2>}/>
         </Routes>
       </div>
