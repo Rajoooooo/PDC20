@@ -1,24 +1,19 @@
 import React from "react";
 
-const Tab = ({name, isActive, onClick}) => {
-    
+const Tab = ({ name, isActive, onClick }) => {
     const tabStyle = {
         padding: '10px 20px',
         cursor: 'pointer',
-        borderBottom: isActive? '2px solid blue' : 'none',
-        color: isActive? 'blue' : 'black',
+        borderBottom: isActive ? '2px solid blue' : 'none',
+        color: isActive ? 'blue' : 'black',
+        marginRight: '10px'
+    };
 
-    }
-    return(
-        <div 
-            style={tabStyle} 
-            onClick={onClick}>
-                
-                {name}
-                
+    return (
+        <div style={tabStyle} onClick={onClick}>
+            {name}
         </div>
-
     );
-}
+};
 
 export default Tab;
