@@ -1,0 +1,639 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* Dark background color */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #495057; /* Darker gray on hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem; /* Increased font size */
+    color: #030000; /* White text */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-weight: 500;
+    color: #000000; /* White text */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.nav-link.active {
+    color: #ffcc00; /* Gold color for active link */
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00; /* Underline for active link */
+}
+
+.shadow {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Vertical spacing for links */
+    }
+}
+
+/* Home Page Styles */
+.home-container {
+    padding: 40px;
+    text-align: center; /* Center text */
+    background-color: #ffffff; /* White background */
+}
+
+.home-title {
+    font-size: 2.5rem; /* Increase font size */
+    color: #24292e; /* Dark gray for title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.home-description {
+    font-size: 1.2rem; /* Slightly larger description text */
+    color: #586069; /* Light gray for description */
+    margin-bottom: 30px; /* Space below the description */
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Space cards evenly */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    max-width: 1200px; /* Max width for cards */
+    margin: 0 auto; /* Center cards */
+}
+
+.card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e1e4e8; /* Light border for contrast */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for the card */
+    margin: 15px; /* Space between cards */
+    width: 300px; /* Fixed width for cards */
+    transition: box-shadow 0.3s; /* Smooth shadow effect */
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Title size */
+    color: #24292e; /* Dark gray */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card-content {
+    font-size: 1rem; /* Regular paragraph size */
+    color: #586069; /* Gray */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+/* List Styles */
+.repo-list, .contribution-list, .stats-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.repo-list li, .contribution-list li, .stats-list li {
+    font-size: 1rem; /* List item size */
+    color: #586069; /* Light gray */
+    padding: 5px 0; /* Space between list items */
+}
+
+/* Link Styles */
+.link {
+    color: #0366d6; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Profile Page Styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Padding around the container */
+    background-color: #ffffff; /* Light gray background */
+}
+
+.profile-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e4e0e0; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for the card */
+    width: 100%;
+    max-width: 600px; /* Max width for the card */
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.profile-image {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.profile-title {
+    font-size: 2rem; /* Title size */
+    color: #24292e; /* Dark gray */
+    margin-bottom: 5px; /* Space below title */
+}
+
+.profile-bio {
+    font-size: 1rem; /* Bio size */
+    color: #586069; /* Light gray */
+    margin-bottom: 15px; /* Space below bio */
+}
+
+/* Stats Section */
+.profile-stats {
+    margin-bottom: 20px; /* Space below stats */
+}
+
+.stats-title {
+    font-size: 1.5rem; /* Stats title size */
+    color: #24292e; /* Dark gray */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.stats-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    color: #586069; /* Light gray */
+}
+
+/* Repositories Section */
+.profile-repos {
+    margin-bottom: 20px; /* Space below repos */
+}
+
+.repos-title {
+    font-size: 1.5rem; /* Repositories title size */
+    color: #24292e; /* Dark gray */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.repo-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    color: #586069; /* Light gray */
+}
+
+.repo-link {
+    color: #0366d6; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.repo-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0366d6; /* Primary button color */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+    display: block; /* Block display */
+    margin: 0 auto; /* Center button */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Contact Us Page Styles */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Padding around the container */
+    background-color: #ffffff; /* Light gray background */
+}
+
+.contact-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e1e4e8; /* Light border */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for the card */
+    width: 100%;
+    max-width: 500px; /* Max width for the card */
+}
+
+/* Title and Description */
+.contact-title {
+    font-size: 2rem; /* Title size */
+    color: #24292e; /* Dark gray */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.contact-description {
+    font-size: 1rem; /* Description size */
+    color: #586069; /* Light gray */
+    margin-bottom: 20px; /* Space below description */
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: bold; /* Bold label */
+    color: #24292e; /* Dark gray */
+}
+
+.form-control {
+    border: 1px solid #e1e4e8; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Transition effect */
+}
+
+.form-control:focus {
+    border-color: #0366d6; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(3, 102, 214, 0.25); /* Box shadow on focus */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0366d6; /* Primary button color */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* Dark background color */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #495057; /* Darker gray on hover */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem; /* Increased font size */
+    color: #030000; /* White text */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-weight: 500;
+    color: #000000; /* White text */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.nav-link.active {
+    color: #ffcc00; /* Gold color for active link */
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00; /* Underline for active link */
+}
+
+.shadow {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack links on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Vertical spacing for links */
+    }
+}
+
+/* Main Form Container */
+.main-container {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #343a40; /* Dark gray */
+    margin-bottom: 20px; /* Space below title */
+}
+
+
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Clean modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9; /* Soft gray background */
+    color: #333333; /* Dark gray text for readability */
+}
+
+/* Main Container Styling */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Header */
+.main-title {
+    font-size: 3rem;
+    color: #2d3748; /* Dark gray for text */
+    margin-bottom: 40px; /* Space below title */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 2px solid #E2E8F0; /* Light gray border */
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Navbar Link List */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; /* More space between links */
+}
+
+/* Modern Button-like Links */
+.nav-button {
+    background-color: #5A67D8; /* Deep purple */
+    color: #ffffff; /* White text */
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 30px; /* Rounded buttons */
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+}
+
+.nav-button:hover {
+    background-color: #434190; /* Darker purple on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+.nav-button:active {
+    background-color: #2C3A8E; /* Even darker shade for active */
+    transform: translateY(1px); /* Slight downward movement on click */
+}
+
+/* Main Content Styling */
+.content {
+    padding: 40px;
+    background-color: #ffffff; /* White background for content */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around content */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Hover Effects for Links */
+.nav-button:hover {
+    background-color: #48BB78; /* Teal color on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack navigation items on mobile */
+        align-items: center; /* Center align */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px; /* Add margin between stacked links */
+    }
+
+    .main-title {
+        font-size: 2.5rem; /* Smaller title size on mobile */
+    }
+
+    .nav-button {
+        font-size: 1rem; /* Slightly smaller buttons on mobile */
+        padding: 10px 20px;
+    }
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9; /* Soft gray background */
+    color: #e6e3e3; /* Dark gray text for readability */
+}
+
+/* Main Container */
+.input-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* White background for container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow around container */
+    margin-top: 50px; /* Space from the top */
+}
+
+/* Title for the input */
+.input-title {
+    font-size: 1.8rem;
+    color: #2d3748; /* Dark gray for title */
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bolder font weight */
+}
+
+/* Email Input Field */
+.email-input {
+    width: 100%; /* Full width */
+    padding: 12px 20px; /* Padding inside input */
+    font-size: 1.1rem; /* Font size inside the input */
+    border-radius: 5px; /* Rounded corners for input */
+    border: 1px solid #E2E8F0; /* Light border */
+    margin-bottom: 20px; /* Space below the input field */
+    background-color: #f7fafc; /* Light background color */
+    color: #4A5568; /* Dark gray text inside the input */
+    transition: all 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus Effect on Input */
+.email-input:focus {
+    border-color: #5A67D8; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(90, 103, 216, 0.2); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder text style */
+.email-input::placeholder {
+    color: #A0AEC0; /* Light gray placeholder text */
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .input-container {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    .input-title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .email-input {
+        font-size: 1rem; /* Smaller font size for input on mobile */
+    }
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9; /* Light gray background */
+    color: #333333; /* Dark gray text for readability */
+}
+
+/* Main Container */
+.input-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow around the container */
+    margin-top: 50px; /* Space from the top */
+}
+
+/* Title for the input */
+.input-title {
+    font-size: 1.8rem;
+    color: #2d3748; /* Dark gray */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Phone Input Field */
+.phone-input {
+    width: 100%; /* Full width of the container */
+    padding: 12px 20px; /* Padding inside the input field */
+    font-size: 1.1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #E2E8F0; /* Light gray border */
+    margin-bottom: 20px; /* Space below the input */
+    background-color: #f7fafc; /* Light background color */
+    color: #4A5568; /* Dark gray text */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Focus Effect on Input */
+.phone-input:focus {
+    border-color: #5A67D8; /* Blue border on focus */
+    box-shadow: 0 0 0 2px rgba(90, 103, 216, 0.2); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Placeholder Text Styling */
+.phone-input::placeholder {
+    color: #A0AEC0; /* Light gray placeholder text */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #5A67D8; /* Blue color */
+    color: white; /* White text */
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 30px; /* Rounded button */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 100%; /* Full width of the form */
+}
+
+.submit-btn:hover {
+    background-color: #434190; /* Darker blue on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .input-container {
+        padding: 20px; /* Less padding on mobile */
+    }
+
+    .input-title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+
+    .phone-input {
+        font-size: 1rem; /* Smaller font size for input on mobile */
+    }
+
+    .submit-btn {
+        font-size: 1rem; /* Smaller button text on mobile */
+        padding: 10px 20px; /* Smaller button size */
+    }
+}
